@@ -1,25 +1,26 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.example",
-		"id": "example_mod",
+		"group": "olivermakeesco.de",
+		"id": "floweringfriends",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Flowering Friends",
+			"description": "A mod that makes flowers stackable",
 			"contributors": {
-				"Me!": "Owner"
+				"Octal": "Owner"
 			},
 			"contact": {
-				"homepage": "https://example.com/",
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+				"homepage": "https://olivermakesco.de/",
+				"issues": "https://github.com/Oliver-makes-code/flowering-friends/issues",
+				"sources": "https://github.com/Oliver-makes-code/flowering-friends"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/floweringfriends/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "olivermakesco.de.flowering.Mod",
+			"client_init": "olivermakesco.de.flowering.client.ClientMod"
 		},
 		"depends": [
 			{
@@ -35,6 +36,5 @@
 				"versions": ">=1.19"
 			}
 		]
-	},
-	"mixin": "example_mod.mixins.json"
+	}
 }
